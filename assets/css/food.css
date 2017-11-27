@@ -412,11 +412,9 @@ img {
 
 #about {
     position: fixed;
-/*     margin: auto; */
     left: 5%;
     right: 10%;
     top: 15%;
-    bottom: 15%;
     text-align: center;
     display: none;
     font-size: 20px;
