@@ -55,6 +55,13 @@ $(document).ready(function() {
         $("#about").fadeOut();
         $("#page-overlay").fadeOut();
     });
+    $("#typeit").typeIt({
+        strings: ["I hope you enjoy", "my taste of Home.", "Welcome."],
+        speed: 50,
+        startDelete: true,
+        breakLines: false,
+        autoStart: false
+    });
 });
 
 

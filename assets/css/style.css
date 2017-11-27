@@ -1,8 +1,7 @@
 /*OVERALL STRUCTURE*/
 body, html {
 	margin: 0px;
-	font-family: 'Lato', sans-serif;
-/* 	font-family: 'Oswald'; */
+	font-family: 'Open Sans', sans-serif;
 	background-color: var(--color5);
     height:600px;
 }
@@ -72,7 +71,7 @@ a:active {color:black;}  /* selected link */
 }
 
 #logo {
-	width: 200px;
+	width: auto;
 	height: auto;
 	cursor: pointer;
 	display:inline-block;
@@ -81,6 +80,7 @@ a:active {color:black;}  /* selected link */
     bottom: 8px;
 	font-size: 50px;
 	transition: 0.3s;
+	font-weight: bold;
 }
 
 #nav-content:hover {
@@ -318,7 +318,7 @@ a:active {color:black;}  /* selected link */
 	padding-left:10px;
 	padding-right:10px;
 	list-style: none;
-	width:120px;
+	width:auto;
 	margin-bottom: 24px;
 	font-size: 15pt;
 	right:2%;
@@ -331,7 +331,7 @@ a:active {color:black;}  /* selected link */
 }
 
 #footer:hover{
-    opacity:.8;
+/*     opacity:.8; */
 	cursor: pointer;
     -webkit-box-shadow: 2px 5px 10px 2px var(--color3);
     -moz-box-shadow: 2px 5px 10px 2px var(--color3);
