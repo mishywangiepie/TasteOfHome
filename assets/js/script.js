@@ -1,27 +1,27 @@
 $(document).ready(function() {
 //     $("body").css("overflow", "hidden");
     $(window).scroll(function() {
-        var scrollTop = $(window).scrollTop();
+        var scrollTop = $(window).scrollTop(); // jQuery Function Number 1
         progressBarUpdate(scrollTop, $(document).height() - $(window).height());
         removeAllActiveMenus();
     });
     
-    $(".category").click(function() {
+    $(".category").click(function() { // jQuery Function Number 2
         var name = "#popup-menu-" + $(this).text();
-        if ($(name).hasClass("active-pop")) {
+        if ($(name).hasClass("active-pop")) { // jQuery Function Number 3
             removeAllActiveMenus();
 //             $("#warning").hide();
         }
         else {
             removeAllActiveMenus();
-            $(name).addClass("active-pop");
-            $(name).removeClass("inactive-pop");
+            $(name).addClass("active-pop"); // jQuery Function Number 4
+            $(name).removeClass("inactive-pop"); // jQuery Function Number 5
 //             $("#warning").show();
         }
     });
     
     function removeAllActiveMenus() {
-        $("#popup-menu-entrees").addClass("inactive-pop");
+        $("#popup-menu-entrees").addClass("inactive-pop"); 
         $("#popup-menu-sides").addClass("inactive-pop");
         $("#popup-menu-desserts").addClass("inactive-pop");
         $("#popup-menu-entrees").removeClass("active-pop");
@@ -41,20 +41,21 @@ $(document).ready(function() {
         }
     });
     
-    $("#footer").click(function() {
-        if ($("#about").css("display", "none")) {
-            $("#about").fadeIn();
+    $("#footer").click(function() { 
+        if ($("#about").css("display", "none")) { // jQuery Function Number 6
+            $("#about").fadeIn(); // jQuery Function Number 7
             $("#page-overlay").fadeIn();
         }
     });
     $("#page-overlay").click(function() {
-        $("#about").fadeOut();
+        $("#about").fadeOut(); // jQuery Function Number 8
         $("#page-overlay").fadeOut();
     });
     $("#about").click(function() {
         $("#about").fadeOut();
         $("#page-overlay").fadeOut();
     });
+    
     $("#typeit").typeIt({
         strings: ["I hope you enjoy", "my taste of Home.", "Welcome."],
         speed: 50,
